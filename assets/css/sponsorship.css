@@ -8,16 +8,17 @@
 :root {
   --border-radius: 15px;
   --color-primary: var(--color-bitcamp);
-  --color-starter: #E7D8CC;
-  --color-API: #FFAF00;
-  --color-recruiter: #FF6312;
-  --color-partner: #FF062B;
+  --color-Byte: #e7d8cc;
+  --color-Kilo: #ffaf00;
+  --color-Mega: #ff6312;
+  --color-Giga: #ff062b;
+  --color-Tera: #7f6c5f;
   --color-category: var(--color-sky);
   --color-light-text: white;
   --color-dark-text: var(--color-midnight);
   --color-border: white;
   --color-focus: cornflowerblue;
-  --color-highlight: #FFAF3F;
+  --color-highlight: #ffaf3f;
   --icon-height: 18px;
 }
 
@@ -108,15 +109,15 @@ h2 {
 .Rtable-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr (1fr)[4];
-  grid-template-columns: 2fr repeat(4, 1fr);
+  -ms-grid-columns: 2fr (1fr);
+  grid-template-columns: 2fr repeat(5, 1fr);
 }
 
 .Rtable-cell {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: .5em .5em;
+  padding: 0.5em 0.5em;
   overflow: hidden;
   border: solid 1px var(--color-border);
   font-family: Avenir;
@@ -158,22 +159,27 @@ h2 {
   border-top-right-radius: var(--border-radius);
 }
 
-.Rtable-cell-Starter {
-  background-color: var(--color-starter);
+.Rtable-cell-Byte {
+  background-color: var(--color-Byte);
 }
 
-.Rtable-cell-API {
-  background-color: var(--color-API);
+.Rtable-cell-Kilo {
+  background-color: var(--color-Kilo);
 }
 
-.Rtable-cell-Recruiter {
+.Rtable-cell-Mega {
   color: var(--color-light-text);
-  background-color: var(--color-recruiter);
+  background-color: var(--color-Mega);
 }
 
-.Rtable-cell-Partner {
+.Rtable-cell-Giga {
   color: var(--color-light-text);
-  background-color: var(--color-partner);
+  background-color: var(--color-Giga);
+}
+
+.Rtable-cell-Tera {
+  color: var(--color-light-text);
+  background-color: var(--color-Tera);
 }
 
 .Rtable-cell--foot {
@@ -274,17 +280,19 @@ h2 {
 }
 
 @media all and (max-width: 768px) {
-
-  .Recruiter-active .question-btn img,
-  .Partner-active .question-btn img {
+  .Mega-active .question-btn img,
+  .Giga-active .question-btn img,
+  .Tera-active .question-btn img {
     -webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
   }
 
   .question-btn[aria-describedby^="popover"] img {
     /* Magic filters to match the focus color from https://codepen.io/sosuke/pen/Pjoqqp */
-    -webkit-filter: brightness(0) invert(73%) sepia(44%) saturate(5841%) hue-rotate(194deg) brightness(96%) contrast(93%);
-    filter: brightness(0) invert(73%) sepia(44%) saturate(5841%) hue-rotate(194deg) brightness(96%) contrast(93%);
+    -webkit-filter: brightness(0) invert(73%) sepia(44%) saturate(5841%)
+      hue-rotate(194deg) brightness(96%) contrast(93%);
+    filter: brightness(0) invert(73%) sepia(44%) saturate(5841%)
+      hue-rotate(194deg) brightness(96%) contrast(93%);
   }
 
   .popover {
@@ -306,24 +314,29 @@ h2 {
 
   /* Cell Colors
   ==================================== */
-  .Rtable.Starter-active .Rtable-grid {
-    background-color: var(--color-starter);
+  .Rtable.Byte-active .Rtable-grid {
+    background-color: var(--color-Byte);
   }
 
-  .Rtable.API-active .Rtable-grid {
-    background-color: var(--color-API);
+  .Rtable.Kilo-active .Rtable-grid {
+    background-color: var(--color-Kilo);
   }
 
-  .Rtable.Partner-active .Rtable-grid {
-    background-color: var(--color-partner);
+  .Rtable.Mega-active .Rtable-grid {
+    background-color: var(--color-Mega);
   }
 
-  .Rtable.Recruiter-active .Rtable-grid {
-    background-color: var(--color-recruiter);
+  .Rtable.Giga-active .Rtable-grid {
+    background-color: var(--color-Giga);
   }
 
-  .Rtable.Recruiter-active .Rtable-cell,
-  .Rtable.Partner-active .Rtable-cell {
+  .Rtable.Tera-active .Rtable-grid {
+    background-color: var(--color-Tera);
+  }
+
+  .Rtable.Mega-active .Rtable-cell,
+  .Rtable.Giga-active .Rtable-cell,
+  .Rtable.Tera-active .Rtable-cell {
     color: var(--color-light-text);
   }
 
@@ -370,8 +383,6 @@ h2 {
   display: none;
 }
 
-
-
 @media all and (max-width: 768px) {
   .Tablist {
     display: -webkit-box;
@@ -403,21 +414,26 @@ h2 {
   outline: 0;
 }
 
-.Tab.Starter {
-  background-color: var(--color-starter);
+.Tab.Byte {
+  background-color: var(--color-Byte);
 }
 
-.Tab.API {
-  background-color: var(--color-API);
+.Tab.Kilo {
+  background-color: var(--color-Kilo);
 }
 
-.Tab.Recruiter {
-  background-color: var(--color-recruiter);
+.Tab.Mega {
+  background-color: var(--color-Mega);
   color: var(--color-light-text);
 }
 
-.Tab.Partner {
-  background-color: var(--color-partner);
+.Tab.Giga {
+  background-color: var(--color-Giga);
+  color: var(--color-light-text);
+}
+
+.Tab.Tera {
+  background-color: var(--color-Tera);
   color: var(--color-light-text);
 }
 
