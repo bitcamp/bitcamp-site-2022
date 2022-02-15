@@ -1,5 +1,5 @@
-# 💻 Bitcamp's 2021 Website
-The main website for registering for Bitcamp 2021. It is built using [Bootstrap 5](https://getbootstrap.com/).
+# 💻 Bitcamp's 2022 Website
+The main website for registering for Bitcamp 2022. It is built using [Bootstrap 5](https://getbootstrap.com/).
 
 ## 🗺️ Project Layout
 - [`index.html`](/index.html): The landing page
@@ -10,7 +10,7 @@ The main website for registering for Bitcamp 2021. It is built using [Bootstrap 
 To get started with development:
 - Clone this repository
 ```bash
-git clone --recurse-submodules https://github.com/bitcamp/bitcamp-site-2021
+git clone --recurse-submodules https://github.com/bitcamp/bitcamp-site-2022
 ```
 - Download the [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) VSCode extension
   - It is an extension that makes your HTML look beautiful on save 💅
