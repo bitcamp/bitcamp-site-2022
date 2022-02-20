@@ -279,8 +279,16 @@ a:focus {
 /* Hero
 ================================ */
 
+#hero {
+  background-image: url("../img/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .jumbotron {
-  background-image: url("../img/hero.svg");
+  background-image: url("../img/hero_toplayer-01.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1003,5 +1011,7 @@ hr.divider {
 }
 
 .footer-hills {
-  width: 100%;
+  background-image: url("../img/marshie-hills.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
