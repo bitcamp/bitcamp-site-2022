@@ -278,6 +278,17 @@ a:focus {
 
 /* Hero
 ================================ */
+body {
+  background-image: url("../img/bottom_back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
 
 #hero {
   background-image: url("../img/hero.png");
@@ -285,6 +296,12 @@ a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+  margin-bottom: 0;
+}
+
+#hero-lower {
+
 }
 
 .jumbotron {
