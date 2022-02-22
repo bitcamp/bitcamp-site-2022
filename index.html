@@ -99,6 +99,7 @@
   <!-- End CSS -->
 </head>
 
+<div id="background">
 <body>
 
   <!-- Begin Navigation -->
@@ -146,16 +147,18 @@
     <!-- Begin "Hero" -->
     <section id="hero">
       <div class="jumbotron">
-        <div class="logotype">bitcamp</div>
-        <div class="tagline">Explore Together</div>
-        <div class="date">
-          <p>April 8<sup>th</sup> &#8211; 10<sup>th</sup>, 2022</p>
-          <p>University of Maryland, College Park</p>
-        </div>
-        <div class="button-group">
-          <a href="apply.html" class="apply-button button">Apply now!</a>
-          <a class="small button" href="mentor.html">Mentor</a>
-          <a class="small button" href="volunteer.html">Volunteer</a>
+        <div id="hero-text">
+          <div class="logotype">bitcamp</div>
+          <div class="tagline">Explore Together</div>
+          <div class="date">
+            <p>April 8<sup>th</sup> &#8211; 10<sup>th</sup>, 2022</p>
+            <p>University of Maryland, College Park</p>
+          </div>
+          <div class="button-group">
+            <a href="apply.html" class="apply-button button">Apply now!</a>
+            <a class="small button" href="mentor.html">Mentor</a>
+            <a class="small button" href="volunteer.html">Volunteer</a>
+          </div>
         </div>
       </div>
     </section>
@@ -163,8 +166,8 @@
     <section id="hero-lower">
     <!-- Begin "What is Bitcamp?" -->
     <section id="intro" class="container">
-      <div class="row what-is-section">
-        <div class="col-md-6 d-flex justify-content-center flex-column">
+      <div class="row what-is-section gy-5">
+        <div id="what-is-section-text" class="col-md-6 d-flex justify-content-center flex-column">
           <h2 class="section-title">What is Bitcamp?</h2>
           <p>
             Bitcamp is a 36 hour hackathon and the prime opportunity to delve into your curiosities,
@@ -180,10 +183,10 @@
       </div>
     </section>
     <!-- End "What is Bitcamp?" -->
-
+    <br/>
     <!-- Begin "Tracks"-->
     <section id="tracks" class="container">
-      <h2 class="section-title">Tracks</h2>
+      <h2 class="section-title">Highlights</h2>
       <div class="tracks-carousel">
         <div class="carousel-cell card">
           <header>
@@ -191,8 +194,8 @@
             <h2 class="track-head">Quantum</h2>
           </header>
           <footer>  
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum totam in animi. Ea, harum? Ipsa quod minus quam officia, voluptatum, culpa iure alias quisquam expedita incidunt id quae qui in.</p>
-            <a class="call-to-action">Click for More Info</a>
+            <p>Our newest track! Hackers will learn more about the field of quantum computing with exclusive mentors, sponsors, and workshops! Hackers will use their knowledge of Python and other computing skills on educational and interactive Quantum Track activities.</p>
+            <!-- <a class="call-to-action">Click for More Info</a> -->
           </footer>
         </div>
         <div class="carousel-cell card">
@@ -242,7 +245,7 @@
       </div>
     </section>
     <!-- End "Tracks"-->
-
+    <br/>
  <!-- Begin "Schedule" -->
     <!--
     <section id="schedule" class="container justify-content-center">
@@ -456,7 +459,7 @@
     </section>
     -->
     <!-- End "Schedule" -->
-    
+    <br/>
     <!-- Begin "FAQ" -->
     <section id="faq" class="container">
       <h2 class="section-title">FAQ</h2>
@@ -741,7 +744,7 @@
       </div>
     </section>
     <!-- End "FAQ" -->
-
+    <br/>
     <!-- Begin "Sponsors" -->
     <!--
     <section id="sponsors" class="container">
@@ -817,33 +820,36 @@
     <!-- End Sponsors -->
 </section>
   </main>
-  
+  <br/>
+
   <!-- Begin Footer -->
   <section class="footer-hills">
     <footer class="container contact">
       <hr class="divider">
-      <h3 class="footer-main-text">Feel free to <a href="mailto:hello@bit.camp">email</a> us or find us on:</h3>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/bitcmp">
-          <img class="icon" src="assets/img/social/facebook.svg" alt="Facebook">
-        </a>
-        <a href="https://instagram.com/bitcamp">
-          <img class="icon" src="assets/img/social/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://www.youtube.com/channel/UC_F_7Hv3SAUcQBubYWD-2BA">
-          <img class="icon" src="assets/img/social/youtube.svg" alt="Youtube">
-        </a>
-        <a href="https://twitter.com/bitcmp">
-          <img class="icon" src="assets/img/social/twitter.svg" alt="Twitter">
-        </a>
-        <a href="https://snapchat.com/add/bitcamp">
-          <img class="icon" src="assets/img/social/snapchat.svg" alt="Snapchat">
-        </a>
+      <div class="footer-box">
+        <h3 class="footer-main-text">Feel free to <a href="mailto:hello@bit.camp">email</a> us or find us on:</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/bitcmp">
+            <img class="icon" src="assets/img/social/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://instagram.com/bitcamp">
+            <img class="icon" src="assets/img/social/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.youtube.com/channel/UC_F_7Hv3SAUcQBubYWD-2BA">
+            <img class="icon" src="assets/img/social/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://twitter.com/bitcmp">
+            <img class="icon" src="assets/img/social/twitter.svg" alt="Twitter">
+          </a>
+          <a href="https://snapchat.com/add/bitcamp">
+            <img class="icon" src="assets/img/social/snapchat.svg" alt="Snapchat">
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="./sponsor.html">Sponsor Us</a> | <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of
+            Conduct</a> | <a href="waiver.pdf">Bitcamp Waiver</a></div>
+        <div class="copyright text-muted">Made with <img class="heart" src="assets/img/heart.svg"> by Bitcamp 2022</div>
       </div>
-      <div class="footer-links">
-        <a href="./sponsor.html">Sponsor Us</a> | <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of
-          Conduct</a> | <a href="waiver.pdf">Bitcamp Waiver</a></div>
-      <div class="copyright text-muted">Made with <img class="heart" src="assets/img/heart.svg"> by Bitcamp 2022</div>
     </footer>
   </section>
 
@@ -860,3 +866,4 @@
   <script src="scripts/effects.js"></script>
   <!-- End JS -->
 </body>
+</div>
