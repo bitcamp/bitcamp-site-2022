@@ -89,7 +89,7 @@ html,
 body {
   font-family: var(--body-font);
   line-height: 1.15;
-  color: var(--color-dark-font);
+  color: var(--color-light-font);
 
   /* Fallback for old browsers */
   font-size: 1rem;
@@ -279,7 +279,7 @@ a:focus {
 /* Hero
 ================================ */
 body {
-  background-image: url("../img/bottom_back.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/bottom_back.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,7 +291,7 @@ body {
 }
 
 #hero {
-  background-image: url("../img/hero.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,7 +305,7 @@ body {
 }
 
 .jumbotron {
-  background-image: url("../img/hero_toplayer-01.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/hero_toplayer-01.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -464,6 +464,7 @@ a.button:focus {
 .carousel-cell {
   width: 50%;
   height: 525px;
+  color: var(--color-dark-font);
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
@@ -804,6 +805,7 @@ a.button:focus {
 ================================ */
 .accordion {
   background-color: var(--color-foreground);
+  color: var(--color-dark-font);
   border-radius: var(--border-radius);
   padding: 0.5rem 1.5rem;
 }
@@ -954,7 +956,7 @@ a.button:focus {
 hr.divider {
   height: 7px;
   opacity: 1;
-  color: var(--color-dark-font);
+  color: var(--color-light-font);
 }
 
 .social-icons a {
@@ -1007,7 +1009,7 @@ hr.divider {
 
 .footer-links a {
   font-family: var(--body-font);
-  color: var(--color-dark-font);
+  color: var(--color-light-font);
   /* Prevents the last link from wrapping in between words on smaller screens */
   display: inline-block;
 }
