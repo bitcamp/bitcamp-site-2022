@@ -287,7 +287,8 @@ a:focus {
 } */
 
 #tracks .section-title,
-#faq .section-title {
+#faq .section-title,
+#sponsors .section-title {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -945,6 +946,11 @@ a.button:focus {
   text-align: center;
 }
 
+
+.small-img {
+  width: 435px !important;
+}
+
 .sponsor-logos img {
   width: 235px;
   height: 235px;
@@ -957,6 +963,7 @@ a.button:focus {
   transition: transform var(--transition-timing);
   transition: transform var(--transition-timing), -webkit-transform var(--transition-timing);
 }
+
 
 .sponsor-logos a:hover img {
   -webkit-transform: scale(1.1);
