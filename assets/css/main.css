@@ -947,13 +947,9 @@ a.button:focus {
 }
 
 
-.small-img {
-  width: 435px !important;
-}
-
 .sponsor-logos img {
-  width: 235px;
-  height: 235px;
+  width: 20rem;
+  height: 10rem;
   margin: 2.5rem;
   -o-object-fit: contain;
   object-fit: contain;
