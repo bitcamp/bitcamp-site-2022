@@ -5,10 +5,10 @@
   --color-primary: var(--color-bitcamp);
   --color-dark-font: black;
   --color-light-font: white;
-  --color-background: #f0f2f5;
-  --color-foreground: white;
+  --color-background: rgb(255,255, 255, 1);
+  --color-foreground: rgb(255,255, 255, 0.75);
   --color-focus: rgba(255, 111, 63, 0.25);
-  --color-border: var(--color-background);
+  --color-border: var(--color-foreground);
   --color-shadow: rgba(117, 84, 84, 0.4);
 
   /* Fonts */
@@ -137,7 +137,7 @@ a:focus {
   min-height: var(--nav-height);
   -webkit-box-shadow: 0 1px 5px var(--color-shadow);
   box-shadow: 0 1px 5px var(--color-shadow);
-  background-color: var(--color-foreground);
+  background-color: var(--color-background);
   font-weight: bold;
   font-size: 1.125rem;
   padding-right: 2rem;
@@ -293,9 +293,9 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: rgba(255,255,255,1);
+  background-color: var(--color-foreground);
   border-radius: var(--border-radius);
-  border: 2px solid var(--color-border);
+  border: 2px var(--color-border);
 }
 
 body {
@@ -327,9 +327,9 @@ body {
 #hero-text {
   width: 750px;
   height: 450px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: var(--color-foreground);
   border-radius: var(--border-radius);
-  border: 2px solid var(--color-border);
+  border: 2px var(--color-border);
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,7 +352,7 @@ body {
 #what-is-section-text {
   background-color: var(--color-foreground);
   border-radius: var(--border-radius);
-  border: 2px solid var(--color-border);
+  border: 2px var(--color-border);
 }
 
 .jumbotron {
@@ -533,7 +533,7 @@ a.button:focus {
   transition: transform var(--transition-timing);
   transition: transform var(--transition-timing), -webkit-transform var(--transition-timing);
   text-align: center;
-  border: 2px solid var(--color-border);
+  border: 2px var(--color-border);
   border-radius: var(--border-radius);
   padding: 1.5rem;
   display: -webkit-box;
@@ -1004,9 +1004,9 @@ a.button:focus {
 /* Footer
 ================================ */
 .footer-box {
-  background-color: rgba(255,255,255,1);
+  background-color: var(--color-foreground);
   border-radius: var(--border-radius);
-  border: 2px solid var(--color-border);
+  border: 2px var(--color-border);
 }
 
 .footer-main-text {
