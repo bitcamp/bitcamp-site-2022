@@ -926,6 +926,8 @@ a.button:focus {
 /* Sponsors
 ================================ */
 .sponsor-logos {
+  background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,7 +975,7 @@ a.button:focus {
   display: block;
   text-align: center;
   font-size: 1.125rem;
-  padding-top: 1rem;
+  padding-top: 4rem;
 }
 
 @media only screen and (max-width: 768px) {
