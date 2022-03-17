@@ -446,6 +446,13 @@ a.button:focus {
   outline: 3px solid rgba(92, 128, 248, 0.8);
 }
 
+a.button.minor-button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
 .apply-button {
   font-size: 1.5rem;
 }
