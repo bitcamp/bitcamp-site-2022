@@ -99,6 +99,7 @@
   <!-- End CSS -->
 </head>
 
+<div id="background">
 <body>
 
   <!-- Begin Navigation -->
@@ -115,15 +116,15 @@
       <div id="linkContainer" class="navbar-collapse collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#tracks">Tracks</a>
+            <a class="nav-link" href="#tracks">Highlights</a>
           </li>
-          <li class="nav-item">
+<!--           <li class="nav-item">
             <a class="nav-link" href="#schedule">Schedule</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#faq">FAQ</a>
           </li>
-          <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link" href="#sponsors">Sponsors</a>
           </li>
           <li class="nav-item">
@@ -146,25 +147,28 @@
     <!-- Begin "Hero" -->
     <section id="hero">
       <div class="jumbotron">
-        <div class="logotype">bitcamp</div>
-        <div class="tagline">Explore Together</div>
-        <div class="date">
-          <p>April 8<sup>th</sup> &#8211; 10<sup>th</sup>, 2022</p>
-          <p>University of Maryland, College Park</p>
-        </div>
-        <div class="button-group">
-          <a href="apply.html" class="apply-button button">Apply now!</a>
-          <a class="small button" href="mentor.html">Mentor</a>
-          <a class="small button" href="volunteer.html">Volunteer</a>
+        <div id="hero-text">
+          <div class="logotype">bitcamp</div>
+          <div class="tagline">Adventure Awaits</div>
+          <div class="date">
+            <p>April 8<sup>th</sup> &#8211; 10<sup>th</sup>, 2022</p>
+            <p>University of Maryland, College Park</p>
+          </div>
+          <div class="button-group">
+            <a href="apply.html" class="apply-button button">Apply now!</a>
+            <a href="https://forms.gle/6SS6oFnHFWBEdUYN8" class="minor-button button">Minors Application</a>
+            <a class="small button" href="mentor.html">Mentor</a>
+            <a class="small button" href="volunteer.html">Volunteer</a>
+          </div>
         </div>
       </div>
     </section>
     <!-- End "Hero" -->
-
+    <section id="hero-lower">
     <!-- Begin "What is Bitcamp?" -->
     <section id="intro" class="container">
-      <div class="row what-is-section">
-        <div class="col-md-6 d-flex justify-content-center flex-column">
+      <div class="row what-is-section gy-5">
+        <div id="what-is-section-text" class="col-md-6 d-flex justify-content-center flex-column">
           <h2 class="section-title">What is Bitcamp?</h2>
           <p>
             Bitcamp is a 36 hour hackathon and the prime opportunity to delve into your curiosities,
@@ -180,10 +184,10 @@
       </div>
     </section>
     <!-- End "What is Bitcamp?" -->
-
+    <br/>
     <!-- Begin "Tracks"-->
     <section id="tracks" class="container">
-      <h2 class="section-title">Tracks</h2>
+      <h2 class="section-title">Highlights</h2>
       <div class="tracks-carousel">
         <div class="carousel-cell card">
           <header>
@@ -191,8 +195,8 @@
             <h2 class="track-head">Quantum</h2>
           </header>
           <footer>  
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum totam in animi. Ea, harum? Ipsa quod minus quam officia, voluptatum, culpa iure alias quisquam expedita incidunt id quae qui in.</p>
-            <a class="call-to-action">Click for More Info</a>
+            <p>Our newest track! Hackers will learn more about the field of quantum computing with exclusive mentors, sponsors, and workshops! Hackers will use their knowledge of Python and other computing skills on educational and interactive Quantum Track activities.</p>
+            <!-- <a class="call-to-action">Click for More Info</a> -->
           </footer>
         </div>
         <div class="carousel-cell card">
@@ -242,12 +246,11 @@
       </div>
     </section>
     <!-- End "Tracks"-->
-
-    <!-- Begin "Schedule" -->
+    <br/>
+ <!-- Begin "Schedule" -->
     <!--
     <section id="schedule" class="container justify-content-center">
       <h2 class="section-title">Schedule</h2>
-
       <div class="schedule-container">
         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
@@ -272,7 +275,6 @@
             </a>
           </li>
         </ul>
-
         <div class="tab-content">
           <div class="tab-pane fade active show" id="day1" role="tabpanel" aria-labelledby="day1-tab">
             <table class="table schedule-table">
@@ -319,7 +321,6 @@
                 </tr>
               </tbody>
             </table>
-
           </div>
           <div class=" tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
             <table class="table schedule-table">
@@ -455,12 +456,11 @@
           </div>
         </div>
       </div>
-
       <p class="text-center text-muted mt-3">All times are in Eastern Daylight Time (EDT)</p>
     </section>
     -->
     <!-- End "Schedule" -->
-
+    <br/>
     <!-- Begin "FAQ" -->
     <section id="faq" class="container">
       <h2 class="section-title">FAQ</h2>
@@ -558,7 +558,7 @@
               <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
                 data-bs-parent="#accordionFlush">
                 <div class="accordion-body">
-                  Unfortunately, we are unable to accommodate minors at this time.
+                  Yes! Minors can attend with a chaperone, and can apply <a href="https://forms.gle/6SS6oFnHFWBEdUYN8">here</a>!
                 </div>
               </div>
             </div>
@@ -648,9 +648,8 @@
               <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10"
                 data-bs-parent="#accordionFlush">
                 <div class="accordion-body">
-                  Any college student or high school student above the age 
-                  of 18 is more than welcome to apply to
-                  Bitcamp.
+                  Any college student or high school student is more than welcome to apply to
+                  Bitcamp!
                 </div>
               </div>
             </div>
@@ -744,118 +743,125 @@
         </div>
       </div>
     </section>
-
     <!-- End "FAQ" -->
-
+    <br/>
     <!-- Begin "Sponsors" -->
-    <!--
     <section id="sponsors" class="container">
       <h2 class="section-title">Sponsors</h2>
-      <em class="call-to-action">Interested in sponsoring us? Email us at <a
-          href="mailto:sponsorship@bit.camp">sponsorship@bit.camp</a> or <a href="./sponsor.html">view
-          our prospectus</a>.</em>
       <div class="sponsor-logos">
-        <!- - Partner Tier - ->
+        <!-- Tera Tier -->
         <a href="https://cmns.umd.edu/">
-          <img src="assets/img/sponsors/partner/CMNS.png" alt="CMNS">
+          <img src="assets/img/sponsors/Custom/CMNS.png" alt="CMNS" >
         </a>
         <a href="https://www.cs.umd.edu/">
-          <img src="assets/img/sponsors/partner/CS.png" alt="UMD CS Department">
+          <img src="assets/img/sponsors/Custom/CS.png" alt="UMD CS Department" >
         </a>
         <a href="https://www.umiacs.umd.edu/">
-          <img src="assets/img/sponsors/partner/UMIACS.png" alt="UMIACS">
+          <img src="assets/img/sponsors/Custom/UMIACS.png" alt="UMIACS" >
         </a>
-        <!- - End Partner Tier - ->
-
-        <!- - Recruiter Tier - ->
-        <a href="https://careers.leidos.com/pages/intern-and-new-graduate-jobs">
-          <img src="assets/img/sponsors/recruiter/leidos.png" alt="Leidos">
+        <a href="https://eng.umd.edu/">
+          <img src="assets/img/sponsors/Custom/ClarkEng.png" alt="Clark School of Engineering" >
         </a>
-        <a href="http://developers.arcgis.com/">
-          <img src="assets/img/sponsors/recruiter/esri.png" alt="ESRI">
+        <!-- End Tera Tier -->
+        <!-- Giga Tier -->
+        
+        <!-- End Giga Tier -->
+        <!-- Mega Tier -->
+        <a href="https://www.cockroachlabs.com/">
+          <img src="assets/img/sponsors/Mega/CockroachLabs.png" alt="Cockroach Labs">
         </a>
-        <a href="https://www.troweprice.com/corporate/us/en/careers/students-and-recent-graduates.html">
-          <img src="assets/img/sponsors/recruiter/t-rowe-price.png" alt="T. Rowe Price">
+        <a href="https://twosixtech.com/">
+          <img src="assets/img/sponsors/Mega/TwoSix.png" alt="Two Six Technologies" >
         </a>
-        <!- - End Recruiter Tier - ->
-
-
-        <!- - API Tier - ->
-        <a href="https://www.linode.com/">
-          <img src="assets/img/sponsors/API/linode.png" alt="Linode">
+        <a href="https://www.bloomberg.com/">
+          <img src="assets/img/sponsors/Mega/Bloomberg.png" alt="Bloomberg">
         </a>
-        <a href="https://ltsnet.net/">
-          <img src="assets/img/sponsors/API/LTS.png" alt="LTS">
+        <!-- End Mega Tier -->
+        <!-- Kilo Tier -->
+        <a href="https://www.troweprice.com/">
+          <img src="assets/img/sponsors/Custom/TRowe.png" alt="T. Rowe Price" >
+        </a> 
+        <a href="https://www.jhuapl.edu/">
+          <img src="assets/img/sponsors/Kilo/JHU.png" alt="Johns Hopkins Applied Physics Laboratory" >
         </a>
-        <a href="https://courier.com/">
-          <img src="assets/img/sponsors/API/courier.png" alt="Courier">
+        <a href="https://www.ltsnet.net/">
+          <img src="assets/img/sponsors/Kilo/LTS.png" alt="Laboratory for Telecommunication Sciences" >
         </a>
-        <a href="https://www.jhuapl.edu/Careers">
-          <img src="assets/img/sponsors/API/jhu-apl.png" alt="JHU APL">
+        <!-- End Kilo Tier -->
+        <!-- Byte Tier -->
+        <a href="http://www3.mtb.com/">
+          <img src="assets/img/sponsors/Custom/M&T.png" alt="M&T Bank" >
         </a>
-        <a href="https://research.adobe.com/">
-          <img src="assets/img/sponsors/API/adobe.png" alt="Adobe">
+        <a href="https://www.rhsmith.umd.edu/">
+          <img src="assets/img/sponsors/Custom/Smith.png" alt="Robert H. Smith School of Business" >
         </a>
-        <a href="https://www.bloomberg.com/engineering">
-          <img src="assets/img/sponsors/API/bloomberg.png" alt="Bloomberg">
+        <a href="https://www.1517fund.com/">
+          <img src="assets/img/sponsors/Byte/1517.png" alt="1517 Fund">
         </a>
-        <!- - End API Tier - ->
-
-
-        <!- - Starter Tier - ->
-        <a href="http://asymmetrik.com/careers">
-          <img src="assets/img/sponsors/starter/asymmetrik.png" alt="Asymmetrik">
-        </a>
-        <a href="https://bsos.umd.edu/">
-          <img src="assets/img/sponsors/starter/bsos.png" alt="UMD BSOS">
+        <a href="https://inclusion.cs.umd.edu/mcwic">
+          <img src="assets/img/sponsors/Byte/MCWIC.png" alt="The Maryland Center for Women in Computing" >
         </a>
         <a href="https://appian.com/">
-          <img src="assets/img/sponsors/starter/appian.png" alt="Appian">
+          <img src="assets/img/sponsors/Byte/Appian.png" alt="Appian">
+        <a href="https://bluehalo.com/">
+          <img src="assets/img/sponsors/Byte/BlueHalo.png" alt="BlueHalo" >
         </a>
-        <!- - End Starter Tier - ->
+        <a href="https://bsos.umd.edu/">
+          <img src="assets/img/sponsors/Byte/BSOS.png" alt="College of Behavioral Sciences" >
+        </a>
+        <a href="https://www.rhsmith.umd.edu/centers/dingman-center">
+          <img src="assets/img/sponsors/Byte/Dingman.png" alt="Dingman Center for Entrepreneurship" >
+        </a>
+        <a href="https://aces.umd.edu/">
+          <img src="assets/img/sponsors/Byte/Aces.png" alt="UMD Aces" >
+        </a>
+        <!--Visionist
+        <a href="https://www.visionistinc.com/">
+          <img src="" alt="Visionist.inc">
+        </a> -->
 
-        <!- - Pinnacle + MLH - ->
-        <a href="https://pinnacle.us.org/">
-          <img src="assets/img/sponsors/pinnacle.svg" alt="Pinnacle">
-        </a>
-        <a href="https://www.mlh.io/">
-          <img src="assets/img/sponsors/mlh.png" alt="MLH">
-        </a>
-        <!- - End Pinnacle + MLH - ->
-
+        <!-- End Byte Tier -->
       </div>
+      <em class="call-to-action">Interested in sponsoring us? Email us at <a
+        href="mailto:sponsorship@bit.camp">sponsorship@bit.camp</a> or <a href="./sponsor.html">view
+        our prospectus</a>.</em>
     </section>
-  -->
     <!-- End Sponsors -->
+</section>
   </main>
+  <br/>
 
   <!-- Begin Footer -->
-  <footer class="container contact">
-    <hr class="divider">
-    <h3 class="footer-main-text">Feel free to <a href="mailto:hello@bit.camp">email</a> us or find us on:</h3>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/bitcmp">
-        <img class="icon" src="assets/img/social/facebook.svg" alt="Facebook">
-      </a>
-      <a href="https://instagram.com/bitcamp">
-        <img class="icon" src="assets/img/social/instagram.svg" alt="Instagram">
-      </a>
-      <a href="https://www.youtube.com/channel/UC_F_7Hv3SAUcQBubYWD-2BA">
-        <img class="icon" src="assets/img/social/youtube.svg" alt="Youtube">
-      </a>
-      <a href="https://twitter.com/bitcmp">
-        <img class="icon" src="assets/img/social/twitter.svg" alt="Twitter">
-      </a>
-      <a href="https://snapchat.com/add/bitcamp">
-        <img class="icon" src="assets/img/social/snapchat.svg" alt="Snapchat">
-      </a>
-    </div>
-    <div class="footer-links">
-      <a href="./sponsor.html">Sponsor Us</a> | <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of
-        Conduct</a> | <a href="waiver.pdf">Bitcamp Waiver</a></div>
-    <div class="copyright text-muted">Made with <img class="heart" src="assets/img/heart.svg"> by Bitcamp 2022</div>
-  </footer>
-  <img class="footer-hills" src="assets/img/marshie-hills.png" />
+  <section class="footer-hills">
+    <footer class="container contact">
+      <hr class="divider">
+      <div class="footer-box">
+        <h3 class="footer-main-text">Feel free to <a href="mailto:hello@bit.camp">email</a> us or find us on:</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/bitcmp">
+            <img class="icon" src="assets/img/social/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://instagram.com/bitcamp">
+            <img class="icon" src="assets/img/social/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.youtube.com/channel/UC_F_7Hv3SAUcQBubYWD-2BA">
+            <img class="icon" src="assets/img/social/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://twitter.com/bitcmp">
+            <img class="icon" src="assets/img/social/twitter.svg" alt="Twitter">
+          </a>
+          <a href="https://snapchat.com/add/bitcamp">
+            <img class="icon" src="assets/img/social/snapchat.svg" alt="Snapchat">
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="./sponsor.html">Sponsor Us</a> | <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of
+            Conduct</a> | <a href="waiver.pdf">Bitcamp Waiver</a></div>
+        <div class="copyright text-muted">Made with <img class="heart" src="assets/img/heart.svg"> by Bitcamp 2022</div>
+      </div>
+    </footer>
+  </section>
+
 
   <!-- End Footer -->
 
@@ -869,3 +875,4 @@
   <script src="scripts/effects.js"></script>
   <!-- End JS -->
 </body>
+</div>

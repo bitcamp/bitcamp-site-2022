@@ -5,10 +5,10 @@
   --color-primary: var(--color-bitcamp);
   --color-dark-font: black;
   --color-light-font: white;
-  --color-background: #f0f2f5;
-  --color-foreground: white;
+  --color-background: rgb(255,255, 255, 1);
+  --color-foreground: rgb(255,255, 255, 0.75);
   --color-focus: rgba(255, 111, 63, 0.25);
-  --color-border: var(--color-background);
+  --color-border: var(--color-foreground);
   --color-shadow: rgba(117, 84, 84, 0.4);
 
   /* Fonts */
@@ -106,8 +106,8 @@ h2 {
   padding: 0;
   margin-right: auto;
   margin-bottom: 1rem;
-  text-decoration: underline;
-  text-underline-offset: .3rem;
+  /* text-decoration: underline;
+  text-underline-offset: .3rem; */
 }
 
 a {
@@ -137,7 +137,7 @@ a:focus {
   min-height: var(--nav-height);
   -webkit-box-shadow: 0 1px 5px var(--color-shadow);
   box-shadow: 0 1px 5px var(--color-shadow);
-  background-color: var(--color-foreground);
+  background-color: var(--color-background);
   font-weight: bold;
   font-size: 1.125rem;
   padding-right: 2rem;
@@ -278,9 +278,85 @@ a:focus {
 
 /* Hero
 ================================ */
+/* #background {
+  background-image: url("../img/bottom_mid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+#tracks .section-title,
+#faq .section-title,
+#sponsors .section-title {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
+}
+
+body {
+  background-image: url("../img/bottom_back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .jumbotron {
-  background-image: url("../img/hero.svg");
+  margin-bottom: 0;
+}
+
+#hero {
+  background-image: url("../img/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  margin-bottom: 0;
+}
+
+#hero-lower {
+
+}
+
+#hero-text {
+  width: 750px;
+  height: 450px;
+  background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: var(--title-font);
+  font-weight: bold;
+  text-align: center;
+}
+
+#what-is-section-text {
+  background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
+}
+
+.jumbotron {
+  background-image: url("../img/hero_toplayer-01.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,7 +396,7 @@ a:focus {
 
 @media only screen and (max-width: 600px) {
   .jumbotron {
-    background-image: url("../img/small-screen-hero.png");
+    background-image: url("../img/hero_small.png");
   }
 
   .tagline {
@@ -329,6 +405,13 @@ a:focus {
 
   #hero .date {
     font-size: 1.5rem;
+  }
+
+  #hero-text {
+    width: auto;
+    height: auto;
+    border-radius: 0px;
+    background-color: rgba(255,255,255,0.9);
   }
 }
 
@@ -361,6 +444,13 @@ a.button:hover {
 
 a.button:focus {
   outline: 3px solid rgba(92, 128, 248, 0.8);
+}
+
+a.button.minor-button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
 }
 
 .apply-button {
@@ -412,6 +502,7 @@ a.button:focus {
 ================================ */
 .what-is-section {
   margin-top: 2rem;
+  margin: auto;
   font-weight: 400;
   font-size: 1.25rem;
 }
@@ -432,6 +523,7 @@ a.button:focus {
 
 .what-is-img {
   width: 100%;
+  border-radius: var(--border-radius);
 }
 
 /* Tracks
@@ -448,7 +540,7 @@ a.button:focus {
   transition: transform var(--transition-timing);
   transition: transform var(--transition-timing), -webkit-transform var(--transition-timing);
   text-align: center;
-  border: 2px solid var(--color-border);
+  border: 2px var(--color-border);
   border-radius: var(--border-radius);
   padding: 1.5rem;
   display: -webkit-box;
@@ -566,17 +658,22 @@ a.button:focus {
   top: 0;
   bottom: 0;
   pointer-events: none;
+
+  /* Match the size of the smaller cells on the outside of the carousel */
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .flickity-viewport:before {
-  left: -3px;
+  left: -13px;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--color-background)), to(rgba(255, 255, 255, 0)));
   background-image: -o-linear-gradient(left, var(--color-background), rgba(255, 255, 255, 0));
   background-image: linear-gradient(to right, var(--color-background), rgba(255, 255, 255, 0));
 }
 
 .flickity-viewport:after {
-  right: -3px;
+  right: -13px;
   background-image: -webkit-gradient(linear, right top, left top, from(var(--color-background)), to(rgba(255, 255, 255, 0)));
   background-image: -o-linear-gradient(right, var(--color-background), rgba(255, 255, 255, 0));
   background-image: linear-gradient(to left, var(--color-background), rgba(255, 255, 255, 0));
@@ -836,6 +933,8 @@ a.button:focus {
 /* Sponsors
 ================================ */
 .sponsor-logos {
+  background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,9 +955,10 @@ a.button:focus {
   text-align: center;
 }
 
+
 .sponsor-logos img {
-  width: 235px;
-  height: 235px;
+  width: 20rem;
+  height: 10rem;
   margin: 2.5rem;
   -o-object-fit: contain;
   object-fit: contain;
@@ -868,6 +968,7 @@ a.button:focus {
   transition: transform var(--transition-timing);
   transition: transform var(--transition-timing), -webkit-transform var(--transition-timing);
 }
+
 
 .sponsor-logos a:hover img {
   -webkit-transform: scale(1.1);
@@ -881,7 +982,7 @@ a.button:focus {
   display: block;
   text-align: center;
   font-size: 1.125rem;
-  padding-top: 1rem;
+  padding-top: 4rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -911,6 +1012,12 @@ a.button:focus {
 
 /* Footer
 ================================ */
+.footer-box {
+  background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
+}
+
 .footer-main-text {
   text-align: center;
   font-family: var(--title-font);
@@ -1002,6 +1109,3 @@ hr.divider {
   margin-bottom: 0.25rem;
 }
 
-.footer-hills {
-  width: 100%;
-}
