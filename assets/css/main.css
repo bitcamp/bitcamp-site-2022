@@ -986,7 +986,8 @@ a.button.minor-button {
 }
 
 #sponsors .section-title {
-  width: 600px;
+  width: 60%;
+  min-width: 300px;
   padding: 1rem;
 }
 
