@@ -985,6 +985,11 @@ a.button.minor-button {
   padding-top: 4rem;
 }
 
+#sponsors .section-title {
+  width: 600px;
+  padding: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   .sponsor-logos img {
     width: 225px;
