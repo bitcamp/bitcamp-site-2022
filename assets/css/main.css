@@ -287,6 +287,7 @@ a:focus {
 } */
 
 #tracks .section-title,
+#campfire-games .section-title,
 #faq .section-title,
 #sponsors .section-title {
   width: 300px;
@@ -687,7 +688,63 @@ a.button.minor-button {
   }
 }
 
+/* Campfire Games
+================================ */
+.campfire-container {
+  padding-top: 30px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-foreground);
+  font-size: 1.25rem;
+ }
+  
+ .campfire-description {
+  color: var(--color-dark-font);
+  font-family: var(--title-font);
+  padding: 30px;
+  line-height: 40px;
+ }
+  
+ .row {
+  padding-top: 1rem;
+ }
+  
+ #teams-container {
+  background-color: var(--color-foreground);
+ }
 
+ .marshie {
+  display: block;
+  margin: 0 auto 5px;
+  width: 13vw;
+ }
+  
+ .marshie-paragraph {
+  text-align: left;
+  font-size: 125%;
+  padding: 10px;
+ }
+  
+ .row .col-md-9 {
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  max-height: 150px;
+  max-width: 900px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-foreground);
+ }
+  
+ .blue {
+  color: #2875cc;
+ }
+  
+ .green {
+  color: #009050;
+ }
+  
+ .red {
+  color: #ff3f46;
+ } 
 
 
 /* Schedule
