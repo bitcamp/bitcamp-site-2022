@@ -739,7 +739,7 @@ a.button.minor-button {
 .marshie-paragraph {
   text-align: left;
   font-size: 125%;
-  padding: 10px;
+  padding-top: 1rem;
 }
 
 .row .col-md-9 {
