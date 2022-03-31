@@ -5,8 +5,8 @@
   --color-primary: var(--color-bitcamp);
   --color-dark-font: black;
   --color-light-font: white;
-  --color-background: rgb(255,255, 255, 1);
-  --color-foreground: rgb(255,255, 255, 0.75);
+  --color-background: rgb(255, 255, 255, 1);
+  --color-foreground: rgb(255, 255, 255, 0.75);
   --color-focus: rgba(255, 111, 63, 0.25);
   --color-border: var(--color-foreground);
   --color-shadow: rgba(117, 84, 84, 0.4);
@@ -286,7 +286,6 @@ a:focus {
   background-attachment: fixed;
 } */
 
-#tracks .section-title,
 #faq .section-title,
 #sponsors .section-title {
   width: 300px;
@@ -294,6 +293,15 @@ a:focus {
   margin-right: auto;
   text-align: center;
   background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
+}
+
+#tracks-and-highlights .section-title {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   border-radius: var(--border-radius);
   border: 2px var(--color-border);
 }
@@ -320,9 +328,7 @@ body {
   margin-bottom: 0;
 }
 
-#hero-lower {
-
-}
+#hero-lower {}
 
 #hero-text {
   width: 750px;
@@ -411,7 +417,7 @@ body {
     width: auto;
     height: auto;
     border-radius: 0px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
 
@@ -528,6 +534,18 @@ a.button.minor-button {
 
 /* Tracks
 ================================ */
+
+#tracks-and-highlights {
+  background-color: var(--color-foreground);
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+
 .carousel-cell {
   width: 50%;
   height: 525px;
@@ -1114,4 +1132,3 @@ hr.divider {
   height: 1.125em;
   margin-bottom: 0.25rem;
 }
-
