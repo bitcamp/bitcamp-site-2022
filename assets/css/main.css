@@ -286,8 +286,6 @@ a:focus {
   background-attachment: fixed;
 } */
 
-#campfire-games .section-title,
-#faq .section-title,
 #sponsors .section-title {
   width: 300px;
   margin-left: auto;
@@ -360,6 +358,8 @@ body {
   background-color: var(--color-foreground);
   border-radius: var(--border-radius);
   border: 2px var(--color-border);
+  padding: 1rem;
+  padding-left: 1.5rem;
 }
 
 .jumbotron {
@@ -709,17 +709,29 @@ a.button.minor-button {
 /* Campfire Games
 ================================ */
 .campfire-container {
-  padding-top: 30px;
   border-radius: var(--border-radius);
   background-color: var(--color-foreground);
   font-size: 1.25rem;
+  border: 2px var(--color-border);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.campfire-container .section-title {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
 }
 
 .campfire-description {
   color: var(--color-dark-font);
   font-family: var(--title-font);
-  padding: 30px;
-  line-height: 40px;
+  line-height: 2rem;
 }
 
 .row {
@@ -950,9 +962,21 @@ a.button.minor-button {
 /* FAQ
 ================================ */
 .accordion {
-  background-color: var(--color-foreground);
   border-radius: var(--border-radius);
-  padding: 0.5rem 1.5rem;
+  background-color: var(--color-foreground);
+  border: 2px var(--color-border);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.accordion .section-title {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border);
 }
 
 .accordion-button::after {
@@ -1097,13 +1121,14 @@ a.button.minor-button {
   background-color: var(--color-foreground);
   border-radius: var(--border-radius);
   border: 2px var(--color-border);
+  padding: 1rem;
 }
 
 .footer-main-text {
   text-align: center;
   font-family: var(--title-font);
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
