@@ -536,7 +536,7 @@ a.button.minor-button {
 /* Tracks
 ================================ */
 
-#tracks-and-highlights {
+#tracks, #mini-events {
   background-color: var(--color-foreground);
   border-radius: var(--border-radius);
   border: 2px var(--color-border);
