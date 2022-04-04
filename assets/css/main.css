@@ -764,6 +764,29 @@ a.button.minor-button {
   background-color: var(--color-foreground);
 }
 
+@media screen and (max-width:768px) {
+  .row {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .row .col-md-9{
+    max-height: none; 
+    max-width: none;
+  }
+
+}
+
 .blue {
   color: #2875cc;
 }
