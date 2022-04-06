@@ -978,10 +978,6 @@ a.button.minor-button {
   color: var(--color-soil);
 }
 
-.schedule-table .other {
-  color: #000000;
-}
-
 .schedule-table .text-muted {
   font-size: 0.75em;
 }
