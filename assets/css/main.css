@@ -331,7 +331,7 @@ body {
 
 #hero-text {
   width: 750px;
-  height: 450px;
+  height: 500px;
   background-color: var(--color-foreground);
   border-radius: var(--border-radius);
   border: 2px var(--color-border);
@@ -424,6 +424,15 @@ body {
 
 .date p {
   margin-bottom: 0.25rem;
+}
+
+.date a {
+  color: var(--color-dark-font);
+  text-decoration: none;
+}
+
+.date a:hover {
+  color: var(--color-bitcamp)
 }
 
 a.button {
